@@ -12,11 +12,11 @@ class Janela (QMainWindow): # Cria-se uma classe chamando QMainWindow
             self.titulo = "Olá, Mundo!" # Definindo titulo da janela
             self.CarregarJanela()
         
-    def CarregarJanela(self):
+    def CarregarJanela(self): #Cria a função de carregar a janela
         self.setGeometry(self.esquerda, self.topo, self.largura, self.altura) #Criando a janela de acordo com os parâmetros informados anteriormente 
         self.setWindowTitle(self.titulo) #Criar o titulo da janela
         self.show() #Mostrar a janela
 
-aplicacao = QApplication(sys.argv)
-j = Janela()
-sys.exit(aplicacao.exec_())
+aplicacao = QApplication(sys.argv) # Cria a aplicação
+j = Janela() # Chama objeto relacionado a classe
+sys.exit(aplicacao.exec_()) # Padrão
