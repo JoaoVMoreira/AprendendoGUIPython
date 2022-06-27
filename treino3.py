@@ -17,6 +17,7 @@ class Jane_Treino(QMainWindow):
         primeiro_botao.setStyleSheet('QPushButton {background-color: blue; font-size: 15px}')
         primeiro_botao.clicked.connect(self.clicado1)
 
+
         self.aparece_janela()
 
 
