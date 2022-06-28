@@ -41,11 +41,11 @@ class Janela(QMainWindow):
     
     def botao1Clicado(self):
         self.label1.setText('Você clicou no botão 1') #Definindo o texto da label ao clicar no botão 1
-        self.label1.setStyleSheet('QLabel {font-size: 18px; font: bold; color: red}')
+        self.label1.setStyleSheet('QLabel {font-size: 18px; font: bold; color: red}') #Defininfo formatação da label ao clicar no botao 1
     
     def botao2Clicado(self):
         self.label1.setText('Você clicou no botão 2') #Definindo o texto da label ao clicar no botão 1
-        self.label1.setStyleSheet('QLabel {font-size: 18px; font: bold; color: blue}')
+        self.label1.setStyleSheet('QLabel {font-size: 18px; font: bold; color: blue}') #Defininfo formatação da label ao clicar no botao 2 
 
 aplicacao = QApplication(sys.argv)
 j = Janela()
