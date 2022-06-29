@@ -30,9 +30,9 @@ class Imagens(QMainWindow):
         self.label1.setStyleSheet('QLabel {font-size: 20px; color: green; font: bold}')
         self.label1.resize(300, 25)
 
-        self.carro = QLabel(self)
-        self.carro.move(50, 400)
-        self.resize(300, 100)
+        self.carro = QLabel(self) # Criando a label que irá conter a imagem
+        self.carro.move(50, 400) # Definindo local da imagem na tela
+        self.resize(300, 100) # Definindo tamanho do espaço da imagem
 
         self.CarregaJanela()
 
@@ -44,12 +44,12 @@ class Imagens(QMainWindow):
     def botao1Clicado(self):
         self.label1.setText('Carro 1')
         self.label1.setStyleSheet('QLabel {font-size: 20px; color: red; font: bold}')
-        self.carro.setPixmap(QtGui.QPixmap('carroVermelho.png'))
+        self.carro.setPixmap(QtGui.QPixmap('carroVermelho.png')) # Definindo imagem utilizada ao clicar no botão 1
 
     def botao2Clicado(self):
         self.label1.setText('Carro 2')
         self.label1.setStyleSheet('QLabel {font-size: 20px; color: blue; font: bold}')
-        self.carro.setPixmap(QtGui.QPixmap('carroAzul.png'))
+        self.carro.setPixmap(QtGui.QPixmap('carroAzul.png')) # Definindo imagem utilizada ao clicar no botão 2
 
 aplicacao = QApplication(sys.argv)
 i = Imagens()
